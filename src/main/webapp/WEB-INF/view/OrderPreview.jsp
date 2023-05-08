@@ -40,7 +40,7 @@
 <div class="topnav">
  
   <a href="/home"> Add New Orders</a>
-  <a class="active" active="true" href="/order_preview">View Orders</a>
+  <a class="active" active="true" href="/viewOrders">View Orders</a>
    <a style="float:right;" href="/">Log Out</a>
 </div>
 

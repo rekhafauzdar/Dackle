@@ -219,7 +219,7 @@
 							<th id="th" scope="col" style="width:20%;">Party Name</th>
 							<th id="th" scope="col" style="width:10%;">Size</th>
 							<th id="th" scope="col" style="width:10%;">Qty.(Ton)</th>							
-							<th id="th" scope="col" id="hiddendiv" style="width:10%;" >Action</th>
+							<th  scope="col" id="hiddendiv" style="width:10%;" >Action</th>
 						</tr>
 					</thead>
 					<tbody id="tbody">

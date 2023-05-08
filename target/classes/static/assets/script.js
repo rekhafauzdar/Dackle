@@ -29,7 +29,12 @@ function AddOrder(){
     
 	var tableRow = '<tr id='+id+'> <td><input name="orderdate_'+id+'" type="hidden" value='+ orderdate +'></input>'+papertype+'<input name="papertype_'+id+'" type="hidden" value='+$("#papertype").val()+'></input></td><td>'+gsm+'<input name="gsm_'+id+'" type="hidden" value='+gsm+'></input></td> <td>'+partyname+'<input name="partyname_'+id+'" type="hidden" value='+partyname+'></input></td><td>'+width+'*'+length+'<input name="size_'+id+'" type="hidden" value='+width+'-'+length+'></input> </td> <td>'+quantity+'<input name="quantity_'+id+'" type="hidden" value='+quantity+'></input></td> <td hidden="ture">'+priority+'<input name="priority_'+id+'" type="hidden" value='+$("#priority").val()+'></input></td> <td><a style="color:green;" href="#" onclick="editOrder('+id+')">Edit</a>&nbsp;/&nbsp;<a style="color:red;" href="#" onclick="deleteOrder('+id+')">Delete</a></td></tr>';	
 	$("#tbody").append(tableRow); 
-	}                      
+	}   
+	
+	
+	
+	
+	                   
 }
 
 function editOrder(orderId){
