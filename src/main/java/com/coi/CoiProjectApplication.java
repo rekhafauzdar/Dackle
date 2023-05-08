@@ -71,7 +71,7 @@ public class CoiProjectApplication extends SpringBootServletInitializer {
 	
 	@GetMapping("/viewOrders")
 	public String viewOrders(ModelMap modelMap, @RequestParam HashMap<String, String> param){
-		//service.getPrevOrders(modelMap,param);
+		
 		return "OrderPreview";
 	}
 	

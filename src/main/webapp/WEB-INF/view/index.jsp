@@ -59,6 +59,16 @@
 	width:100%;
 	}
 	
+	#th{
+	font-weight:800;
+	color:black;
+	}
+	
+	.container1{
+	margin-top:0px;
+	}
+	
+	
 	
 	
 	}
@@ -88,9 +98,11 @@
 
 <div class="topnav">
  
-  <a active="true" class="active" href="/home"> Add New Orders</a>
+  <a active="true" class="active" href="/home">Add New Orders</a>
   <a href="/viewOrders">View Orders</a>
+   
    <a style="float:right;" href="/">Log Out</a>
+    <a style="float:right;" href="/registrationPage">New Registration</a> 
 </div>
 
 <div class="container1">
@@ -174,7 +186,7 @@
 
 
 				<div class="col-auto" id="hiddendiv">
-					<button type="submit" class="btn btn-success mb-4" style="border-radius:40px; width:100%;" fdprocessedid="280s4d" onclick="AddOrder();">Add Order</button>
+					<button type="submit" class="btn btn-success mb-4" style="border-radius:40px; margin-top:4px; " fdprocessedid="280s4d" onclick="AddOrder();">&nbsp;&nbsp;&nbsp;Add Order&nbsp;&nbsp;&nbsp;</button>
 				</div>
 				
 				
@@ -202,12 +214,12 @@
 					<thead>
 						<tr style="border:2px solid black">
 						
-							<th scope="col" style="width:10%;">Paper Type</th>
-							<th scope="col" style="width:10%;">GSM</th>
-							<th scope="col" style="width:20%;">Party Name</th>
-							<th scope="col" style="width:10%;">Size</th>
-							<th scope="col" style="width:10%;">Qty.(Ton)</th>							
-							<th scope="col" id="hiddendiv" style="width:10%;" >Action</th>
+							<th id="th" scope="col" style="width:10%;">Paper Type</th>
+							<th id="th" scope="col" style="width:10%;">GSM</th>
+							<th id="th" scope="col" style="width:20%;">Party Name</th>
+							<th id="th" scope="col" style="width:10%;">Size</th>
+							<th id="th" scope="col" style="width:10%;">Qty.(Ton)</th>							
+							<th id="th" scope="col" id="hiddendiv" style="width:10%;" >Action</th>
 						</tr>
 					</thead>
 					<tbody id="tbody">
@@ -251,8 +263,8 @@
 				</div>
 				
 				<div class="button input-box" style="text-align:center;">
-					<button id="hiddendiv" type="submit" class="btn btn-success mb-3" style="width:20%; border-radius:40px">Dackle Planning</button>
-				<button  id="hiddendiv" type="button" class="btn btn-primary mb-3" style="width:20%; border-radius:40px" onClick="Myprint();" >Print</button>
+					<button id="hiddendiv" type="submit" class="btn btn-success mb-3" style=" border-radius:40px">Dackle Planning</button>
+				<button  id="hiddendiv" type="button" class="btn btn-primary mb-3" style=" border-radius:40px" onClick="Myprint();" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Print&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</button>
 				</div>
 				
 				
@@ -268,12 +280,12 @@
 			<thead >				
 				<tr style="border:2px solid black">
 
-					<th scope="col">Cuts (Paper1)</th>
-					<th scope="col">Cuts (Paper2)</th>
-					<th scope="col">Total Wt.(Ton)</th>
-					<th scope="col">Party1  (T Wt.)  (Total sheets)</th>
-					<th scope="col">Party2  (T Wt.)  (Total Sheets)</th>
-					<th scope="col">Wastage(cm.)</th>
+					<th id="th"  scope="col">Cuts (Paper1)</th>
+					<th id="th"  scope="col">Cuts (Paper2)</th>
+					<th id="th"  scope="col">Total Wt.(Ton)</th>
+					<th id="th"  scope="col">Party1  (T Wt.)  (Total sheets)</th>
+					<th id="th"  scope="col">Party2  (T Wt.)  (Total Sheets)</th>
+					<th id="th"  scope="col">Wastage(cm.)</th>
 					
 
 				</tr>
@@ -446,7 +458,7 @@
 			<thead>				
 				<tr style="border:2px solid black">
 
-					<th scope="col" style="width:20%;">Party Name    (Size)   (Remaining Qty.)</th>					
+					<th id="th"  scope="col" style="width:20%;">Party Name    (Size)   (Remaining Qty.)</th>					
 					
 					
 					

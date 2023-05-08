@@ -190,8 +190,8 @@ form .user-details .input-box{
 
 
  .sign-up-text{
-  text-align: center;
-  margin-top: 5px;
+ 
+  margin-top: 2px;
   
 }
 
@@ -256,12 +256,13 @@ form .user-details .input-box{
 	    }  
 	    
 	    //check correct email validation
+	    if(email !=""){
 	    if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
 	    	 document.getElementById("mailmsg").innerHTML = "**You have entered an invalid email address!"; 
 	    	 return false;
  			 }
    			 
- 			 
+	    }	 
 	  
 	    
 	  
@@ -304,7 +305,7 @@ form .user-details .input-box{
 	        success: function(data) {
 	        	if(data){
 	        		alert("Registration successfully!");
-	        		window.open("/","_self");
+	        		window.open("/registrationPage","_self");
 	        		
 	        	}
 	        	else{
@@ -326,8 +327,10 @@ form .user-details .input-box{
 <body>
 
 
+
   <div class="container" style="margin-top:40px" >
-  <div style="text-align:right;"><a href="/"><i class="fa fa-close" title="close" style="font-size:24px; text-align:right;"></i></a></div>
+  
+  <div style="text-align:right;"><a href="/home"><i class="fa fa-close" title="close" style="font-size:24px; text-align:right;"></i></a></div>
   
     <div class="title">Registration Form</div>
     
@@ -389,7 +392,11 @@ form .user-details .input-box{
           <input type="button" value="Register" onClick="validateForm()">
         </div>
         <div>
-        <div class="text sign-up-text">Already a User? <label for="flip"><a href="/">Login Here</a></label></div>
+        <div >
+         
+          <label  style="float: left;"><a href="/home" >Previous Page</a></label>
+          <label style="float:right;"><a href="/">New Login Here</a></label>
+        </div>
         
         </div>
       </form>

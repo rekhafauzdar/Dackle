@@ -56,12 +56,17 @@ public class Demo {
 		myDataRepository.findAll();
 	}
 	
+	
+	
+	
 	public void calculate(HashMap<String, String> param, ModelMap modelMap) {	
 		
-		paperDetails=  getPaperOrdersMap(param);
+		
+		paperDetails =  getPaperOrdersMap(param);
+		
 		
 		if(paperDetails!=null && paperDetails.size() > 0) {
-		
+			
 		
 		saveOrders();
 		
@@ -301,6 +306,8 @@ public class Demo {
 
 	public  Map<String, Map<String, Object>> getPaperOrdersMap(HashMap<String, String> param) {
 		
+		
+		
 		String strOrderIds = param.get("order_ids").toString();
 		String[] strIdsArrays =  strOrderIds.split(",");
 		
@@ -311,6 +318,9 @@ public class Demo {
 				orderIdsList.add(strIdsArrays[i]);				
 			}
 		}
+		
+
+
 
 		Map<String, Map<String, Object>> paperOrdersMap = new HashMap<String, Map<String, Object>>();
 		
@@ -392,13 +402,14 @@ public class Demo {
 	}
 
 	public void getPrevOrders(ModelMap modelMap, HashMap<String, String> param) {
+		
 		String fromdate = param.get("fromdate");
 		String todate = param.get("todate");
 		String partyName = param.get("partyname");
 		String gsm = param.get("gsm");
 		String quantity = param.get("quantity");
 		
-		System.out.println(fromdate + todate);
+		//System.out.println(fromdate + todate);
 		
 		String flt = "";
 		
@@ -413,10 +424,11 @@ public class Demo {
 		flt = (quantity!=null && !quantity.isEmpty())? flt.length()==0?" where order_qty="+quantity+"":flt+ " and order_qty="+quantity+"":flt;
 		
 		
-		String query ="SELECT * FROM dackle.dackle_orders "+flt+";";
+		String query ="SELECT * FROM railway.dackle_orders "+flt+";";
+		
 		List<DackleOrders> orders = template.query(query, BeanPropertyRowMapper.newInstance(DackleOrders.class));
 		
-		System.out.println(orders.size());
+		//System.out.println(orders.size());
 		
 		modelMap.put("orders", orders);
 		modelMap.put("fromdate", fromdate);

@@ -318,7 +318,7 @@ text-align: center;
               <div class="button input-box">
                 <input type="button" value="Login" onClick="validateForm()" >
               </div>
-              <div class="text sign-up-text">Don't have an account? <label for="flip"><a href="/registrationPage">Registration</a></label></div>
+             <!-- <div class="text sign-up-text">Don't have an account? <label for="flip"><a href="/registrationPage">Registration</a></label></div> -->
             </div>
         </form>
       </div>
