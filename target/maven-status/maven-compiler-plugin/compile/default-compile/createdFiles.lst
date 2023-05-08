@@ -1,0 +1,6 @@
+com\coi\Demo.class
+com\coi\entity\DackleOrders.class
+com\coi\repository\DackleSystemUserRepository.class
+com\coi\CoiProjectApplication.class
+com\coi\repository\MyDataRepository.class
+com\coi\entity\DackleSystemUser.class
