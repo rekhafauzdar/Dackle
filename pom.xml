@@ -11,7 +11,7 @@
 	
 	<groupId>com.coi</groupId>
 	<artifactId>coi-project</artifactId>
-	<packaging>war</packaging>
+	<packaging>jar</packaging>	
 	<version>0.0.1-SNAPSHOT</version>
 	<name>coi-project</name>
 	<description>Cutting of Papers</description>
